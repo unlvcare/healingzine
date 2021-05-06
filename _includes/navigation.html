@@ -1,0 +1,14 @@
+<header class="flex">
+  <a href="{{ "/" | relative_url }}"><h1><img src="{{ "/assets/images/StudentsGuideLogo.svg" | relative_url }}" alt="Student's Guide to Radical Healing"></h1></a>
+  <section>
+    <a href="#" class="mobile-menu-button"><img src="{{ "/assets/images/Menu.svg" | relative_url }}"></a>
+    <a href="#" class="close"><img src="{{ "/assets/images/Exit-Menu.svg" | relative_url }}"></a>
+    <nav class="main-nav">
+      <ul class="flex">
+        <li><a href="{{ "/volume-one/letter-to-the-survivor/" | relative_url }}" {% if page.collection == "volume-one" %}class="nav-active"{% endif %}>Volume One</a></li>
+        <li><a href="{{ "/volume-two/letter-to-the-survivor/" | relative_url }}" {% if page.collection == "volume-two" %}class="nav-active"{% endif %}>Volume Two</a></li>
+        <li><a href="{{ "/about/" | relative_url }}" {% if page.url == "/about/" %}class="nav-active"{% endif %}>About</a></li>
+      </ul>
+    </nav>
+  </section>
+</header>

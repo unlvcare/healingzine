@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="A webzine on trauma, offering an introduction to different healing modalities and tools as well as how to access them.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ "/" | absolute_url }}">
+  <meta property="og:image" content="{{ "/assets/images/SNS-Cover.png" | absolute_url }}">
+  <meta property="og:description" content="A webzine on trauma, offering an introduction to different healing modalities and tools as well as how to access them.">
+
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="A webzine on trauma, offering an introduction to different healing modalities and tools as well as how to access them.">
+  <meta name="twitter:image" content="{{ "/assets/images/SNS-Cover.png" | absolute_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- <link rel="manifest" href="site.webmanifest"> -->
+  <link rel="icon" type="image/png" href="{{ "/assets/images/favicon/favicon-32.png" | relative_url }}" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ "/assets/images/favicon/favicon-192.png" | relative_url }}" sizes="192x192">
+  <link rel="apple-touch-icon" href="{{ "/assets/images/favicon/favicon-152.png" | relative_url }}">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="{{ "assets/css/reset.css" | relative_url }}">
+  <link rel="stylesheet" href="https://use.typekit.net/day4kia.css">
+  <link rel="stylesheet" href="{{ "assets/css/typography.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "assets/css/main.css" | relative_url }}">
+
+  <script src="{{ "assets/js/main.js" | relative_url }}"></script>
+
+  <script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"unlvcare",utcoffset:"-7"}))};sessionStorage.setItem("_swa","1");</script>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  {% include navigation.html %}
+  {{ content }}
+
+  <footer class="flex">
+    <p class="footer-text">The Care Center</p>
+    <div class="footer-nav">
+      <ul class="flex">
+        <li><a href="https://www.unlv.edu/carecenter" target="_blank" rel="noopener noreferrer"><img src="{{ "assets/images/Web.svg" | relative_url }}" alt="Website"></a></li>
+        <li><a href="https://www.instagram.com/unlv_care/" target="_blank" rel="noopener noreferrer"><img src="{{ "assets/images/Instagram.svg" | relative_url }}" alt="Instagram"></a></li>
+        <li><a href="https://twitter.com/UNLV_Care" target="_blank" rel="noopener noreferrer"><img src="{{ "assets/images/Twitter.svg" | relative_url }}" alt="Twitter"></a></li>
+        <li><a href="https://www.facebook.com/UNLVCare" target="_blank" rel="noopener noreferrer"><img src="{{ "assets/images/Facebook.svg" | relative_url }}" alt="Facebook"></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>

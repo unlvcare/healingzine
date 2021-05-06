@@ -1,0 +1,8 @@
+baseurl: /healingzine
+url: "https://unlvcare.github.io"
+
+collections:
+  volume-one:
+    output: true
+  volume-two:
+    output: true

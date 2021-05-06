@@ -1,0 +1,714 @@
+:root {
+    --main-color: #96A974;
+    --secondary-color: #F4ECE1;
+    --background-color: #F9F6F0;
+    --black: #22312E;
+    --padding: 60px;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--black);
+}
+
+p,
+blockquote,
+.intro-ol {
+    margin-top: 20px;
+}
+
+header {
+    padding: 25px var(--padding) 20px;
+    background-color: var(--background-color);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 240px;
+    padding-top: 5px;
+}
+
+header li {
+    margin-left: 40px;
+}
+
+header li a {
+    transition: border-bottom 0.1s ease;
+}
+
+header li a:hover,
+.nav-active {
+    padding-bottom: 2px;
+    border-bottom: 3px solid var(--black);
+}
+
+.mobile-menu-button,
+.close {
+    display: none;
+}
+
+.hero-container,
+.volumes,
+.credits,
+.about-care,
+.about-sdsj,
+.download-container {
+    margin: 0px var(--padding) ;
+}
+
+.hero {
+    padding: 50px 0px;
+}
+
+.hero,
+.volume-card {
+    background-color: var(--secondary-color)
+}
+
+.hp-description {
+    max-width: 640px;
+    padding-left: 8vw;
+}
+
+.hp-description h2{
+    padding-bottom: 15px;
+}
+
+.hero-img {
+    width: 42%;
+}
+
+.hero img {
+    max-width: 100%;
+}
+
+.volumes,
+.credits,
+.orgs,
+.download {
+    padding: 85px 0px;
+}
+
+.volume-cards {
+    align-items: stretch;
+}
+
+.volume-card {
+    width: 50%;
+    padding: 35px;
+    margin: 40px auto 30px;
+    border-radius: 10px;
+}
+
+.volume-card img {
+    max-width: 200px;
+}
+
+.volume-desc {
+    width: 70%;
+}
+
+.volume-desc p {
+    margin-top: 15px;
+}
+
+.button {
+    text-align: center;
+    padding: 10px;
+    display: block;
+    border: 2px var(--black) solid;
+    margin-top: 20px;
+    transition: all 0.1s ease;
+    border-radius: 10px;
+}
+
+.button:hover {
+    color: var(--secondary-color);
+    background-color: var(--black);
+}
+
+.gutter {
+    margin-left: 30px;
+}
+
+footer {
+    padding: 20px var(--padding)  15px;
+    background-color: var(--main-color);
+}
+
+footer img {
+    width: 28px;
+    height: 28px;
+    margin-left: 20px;
+}
+
+.footer-text {
+    margin: 0px;
+    color: var(--background-color)
+}
+
+/* about page */
+
+.credits-img,
+.credits-text,
+.half-col,
+.logo,
+.about-care-text,
+.about-sdsj-text,
+.download-text,
+.download img {
+    width: 50%
+}
+
+.credits img,
+.logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.credits img {
+    max-width: 450px;
+}
+
+.logo img {
+    max-width: 350px
+}
+
+.credits h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.credits p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.credits-col,
+.half-col {
+    align-items: flex-start;
+}
+
+.about-care {
+    margin-bottom: 85px;
+}
+
+.orgs {
+    background-color: var(--secondary-color);
+}
+
+.download-text {
+    text-align: center;
+}
+
+.download-text p {
+    margin-bottom: 10px;
+}
+
+.download-buttons {
+    justify-content: center;
+}
+
+/* zine layout */
+
+.zine-container {
+    align-items: stretch;
+}
+
+.toc {
+    min-width: 305px;
+    padding: 0px 40px 0px var(--padding) ;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-right: 1px solid var(--black);
+}
+
+.toc-button {
+    display: none;
+}
+
+.toc-label {
+    margin-top: 0px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--black);
+}
+
+.main-ch li {
+    margin-top: 30px
+}
+
+li.sub-ch-margin {
+    margin-top: 0px;
+}
+
+.sub-ch li {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.zine-content {
+    width: 100%;
+    padding: 130px var(--padding) ;
+}
+
+article,
+.page-flips {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* zine content */
+
+article h4 {
+    margin-top: 20px;
+}
+
+article img {
+    width: 100%;
+}
+
+.zine-subhead {
+    margin-top: 35px;
+}
+
+.img-margin {
+    margin-top: 20px;
+}
+
+.img-margin-reduce {
+    margin-top: 15px;
+}
+
+.intro-list {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+article .flex {
+    align-items: flex-start;
+}
+
+.line-divider-top {
+    margin-top: 30px;
+    /* padding-top: 30px; */
+    margin-bottom: 30px;
+    /* border-top: 2px solid var(--black); */
+}
+
+article ul {
+    list-style-type: disc;
+    margin-left: 30px;
+}
+
+article li {
+    margin-top: 10px;
+}
+
+article ol li {
+    margin-left: 30px;
+    padding-left: 5px;
+}
+
+.bullet-lvl-two {
+    list-style-type: '>  ';
+    margin-left: 30px;
+}
+
+.subtitled-ol li {
+    margin-top: 15px;
+}
+
+.subtitled-ol p {
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+.ol-sub-bullets ul {
+    margin-left: 0px;
+}
+
+.ol-sub-bullets ul li {
+    margin-top: 7px;
+}
+
+.reading-list p {
+    margin-top: 10px;
+}
+
+.center a,
+article a,
+.link-style {
+    border-bottom: 1px solid var(--main-color);
+    padding-bottom: 2px;
+    color: var(--main-color);
+    transition: all 0.2s ease;
+}
+
+.center a:hover,
+article a:hover,
+.link-style:hover {
+    font-style: italic;
+    color: var(--black);
+    border-bottom: 1px solid var(--black);
+}
+
+.modality-card,
+.zine-card {
+    background-color: var(--secondary-color);
+    padding: 5px 35px 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.modality-card ul {
+    flex-wrap: wrap;
+}
+
+.modality-card li {
+    width: 50%;
+}
+
+.zine-card {
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.zine-card h3 {
+    margin-top: 20px;
+}
+
+.page-flips {
+    margin-top: 40px;
+}
+
+table {
+    margin: 25px 0px;
+}
+
+table, th, td {
+    border: 2px solid var(--main-color);
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+.meditation-table td:nth-child(odd) {
+    width: 40%;
+}
+
+table tr:nth-child(odd) {
+    background-color: var(--secondary-color);
+}
+
+.self-care-assessment li {
+    list-style-type: '__  ';
+    margin-top: 5px;
+}
+
+.self-care-assessment li:nth-child(1) {
+    margin-top: 10px;
+}
+
+.trauma-response p {
+    margin-top: 5px;
+}
+
+.trauma-response h4 {
+    margin-top: 30px;
+}
+
+.highlight {
+    background-color: hsla(82, 24%, 56%, 0.342);
+}
+
+.sdsj-resources {
+    margin-top: 40px;
+}
+
+/* media queries */
+
+@media(max-width:1300px) {
+    .hp-description {
+        padding-left: 0px;
+        width: 60%;
+    }
+
+    .credits img {
+        max-width: 350px;
+    }
+}
+
+@media(max-width:1100px) {
+
+    .volume-cards {
+        flex-direction: column;
+    }
+
+    .volume-card {
+        width: auto;
+    }
+
+    .volume-card.gutter {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .zine-container {
+        flex-direction:column;
+    }
+
+    .toc {
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+        border-right: none;
+        background-color: var(--secondary-color);
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: auto;
+        transition: height 0.3s ease;
+    }
+
+    .toc-button {
+        background-color: var(--main-color);
+        color: var(--background-color);
+        display: block;
+        padding: 20px;
+        position: sticky;
+        top: 0px;
+    }
+
+    .toc-label {
+        display: none;
+    }
+
+    .toc nav {
+        padding-bottom: 40px;
+    }
+
+    .sub-ch li {
+        margin-left: 0px;
+    }
+
+    .zine-content {
+        width: auto;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .height-fix {
+        height: auto;
+    }
+}
+
+@media(max-width: 800px) {
+    .hero-container,
+    .download-container {
+        flex-direction: column-reverse;
+    }
+
+    .hero-img {
+        width: 70%;
+        margin-bottom: 40px;
+    }
+
+    .credits,
+    .about-care,
+    .about-sdsj {
+        flex-direction: column;
+    }
+
+    .credits {
+        padding: 40px 0px;
+    }
+
+    .credits-img {
+        margin-bottom: 40px;
+    }
+
+    .credits-text {
+        width: 90%;
+    }
+
+    .hp-description,
+    .logo,
+    .about-care-text,
+    .about-sdsj-text,
+    .download-text {
+        width: auto;
+    }
+
+    .orgs {
+        padding: 55px 0px 85px
+    }
+
+    .about-care {
+        margin-bottom: 40px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .download img {
+        display: none;
+    }
+
+    .gutter {
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 795px) {
+    :root {
+        --padding: 30px;
+    }
+
+    .mobile-menu-button,
+    .close {
+        display: block;
+    }
+
+    .mobile-menu-button img,
+    .close img {
+        width: 28px;
+        height: 28px;
+    }
+
+    header nav {
+        position: fixed;
+        background-color: var(--main-color);
+        z-index: 4;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        transition: 0.3s all ease;
+    }
+
+    .show-nav {
+        left: 0
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav li {
+        margin-left: 0px;
+        margin-bottom: 35px;
+    }
+
+    .close {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        padding-left: 50px;
+        padding-top: 50px;
+        z-index: 5;
+        transition: 0.3s all ease;
+    }
+
+    .close-show {
+        left: 0;
+    }
+
+    header nav a {
+        color: var(--background-color);
+        border-bottom: none;
+    }
+
+    header li a:hover {
+    border-bottom: 3px solid var(--background-color);
+}
+
+    .nav-active {
+        border-bottom: none;
+    }
+
+    .volume-desc {
+        width: auto;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .volume-card {
+        flex-direction: column;
+    }
+
+    .volume-desc {
+        width: auto;
+        margin-left: auto;
+        margin-top: 25px;
+    }
+
+    .volumes, .download {
+        padding: 40px 0px;
+    }
+
+    .orgs {
+        padding: 20px 0px 40px;
+    }
+
+    .zine-content {
+        padding: 60px var(--padding);
+    }
+
+    article .flex,
+    .credits-col.flex  {
+        flex-direction: column;
+    }
+
+    .credits-col .half-col,
+    .credits img {
+        width: 100%;
+    }
+
+    .credits-img {
+        width: 70%;
+    }
+
+    .credits-text,
+    .modality-card li {
+        width: 100%;
+    }
+
+    article .half-col {
+        width: auto;
+    }
+
+    article .half-col.gutter {
+        margin-left: 0px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-text {
+        margin-bottom: 10px;
+    }
+
+    footer ul {
+        margin-right: 20px;
+    }
+}
